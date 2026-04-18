@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal Archives - Adam's Weather Journey</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f0f2f5;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid #3498db;
+        }
+        nav {
+            background: #34495e;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .journal-archive-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Archive List Styling */
+        .log-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .log-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 15px;
+            border-bottom: 1px solid #edf2f7;
+            transition: background 0.2s;
+        }
+
+        .log-item:hover {
+            background-color: #f8fafc;
+        }
+
+        .log-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .log-title {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+
+        .log-title:hover {
+            color: #3498db;
+        }
+
+        .log-preview {
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        .log-meta {
+            text-align: right;
+            min-width: 120px;
+        }
+
+        .log-date {
+            display: block;
+            font-weight: bold;
+            color: #3498db;
+            font-size: 0.9rem;
+        }
+
+        .severity-tag {
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+        /* Severity Colors */
+        .severe { background: #fed7d7; color: #c53030; }
+        .moderate { background: #feebc8; color: #9c4221; }
+        .calm { background: #c6f6d5; color: #22543d; }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Field Journal Archives</h1>
+        <p>A chronological log of weather observations in Independence, IA</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="journal.html">Journal</a>
+        <a href="education.html">Education</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="container">
+        <div class="journal-archive-box">
+            <h2>Observation Logs</h2>
+            <ul class="log-list">
+
+                <li class="log-item">
+                    <div class="log-content">
+                        <a href="journalEntry1.html" class="log-title">Daily Forecast Comparison</a>
+                        <span class="log-preview">Daily forecast vs. actual conditions</span>
+                    </div>
+                    <div class="log-meta">
+                        <span class="log-date">Apr 17, 2026</span>
+                        <span class="severity-tag calm">Calm</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Adam's Weather Journey | Observations by Adam Warren</p>
+    </footer>
+
+</body>
+</html>

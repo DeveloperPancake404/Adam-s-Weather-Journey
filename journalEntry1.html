@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Journal - Adam's Weather Journey</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f0f2f5;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid #3498db;
+        }
+        nav {
+            background: #34495e;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 30px;
+        }
+
+        @media (max-width: 850px) {
+            .container { grid-template-columns: 1fr; }
+        }
+
+        /* Main Journal Styling */
+        .journal-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .entry-header {
+            border-bottom: 2px solid #eee;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+        }
+        .date-tag {
+            background: #3498db;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        /* Media Elements */
+        .media-container {
+            margin: 25px 0;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            line-height: 0;
+        }
+        .caption {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 8px;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        /* Sidebar Stats */
+        .stats-sidebar {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            height: fit-content;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid #2c3e50;
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .stat-label { font-weight: bold; color: #7f8c8d; }
+        .stat-value { color: #2c3e50; font-weight: 600; }
+
+        /* Data Table */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        .data-table th {
+            background: #f8f9fa;
+            text-align: left;
+            padding: 12px;
+            border-bottom: 2px solid #dee2e6;
+            font-size: 0.9rem;
+        }
+        .data-table td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            color: #95a5a6;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Field Observation Journal</h1>
+        <p>Documenting atmospheric shifts in Independence, Iowa</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="journal.html">Journal</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="container">
+        
+        <main>
+            <article class="journal-card">
+                <div class="entry-header">
+                    <span class="date-tag">APRIL 17, 2026</span>
+                    <h2>Daily Forecast Comparison</h2>
+                </div>
+
+                <p>Light rainfall with lightning and thunder</p>
+
+                <div class="media-container">
+                    <video width="100%" controls>
+                        <source src="footage1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="caption">Footage of rain around 20:00.</p>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Forecast Temperature</th>
+                            <th>Forecast Events</th>
+                            <th>Temperature</th>
+                            <th>Events</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9:00</td>
+                            <td>64°F</td>
+                            <td>Cloudy</td>
+                            <td>67°F</td>
+                            <td>Partly Cloudy</td>
+                        </tr>
+
+                        <tr>
+                            <td>10:00</td>
+                            <td>68°F</td>
+                            <td>Cloudy</td>
+                            <td>Unknown</td>
+                            <td>Unknown</td>
+                        </tr>
+
+                        <tr>
+                            <td>11:00</td>
+                            <td>70°F</td>
+                            <td>Rainy</td>
+                            <td>70°F</td>
+                            <td>Cloudy</td>
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td>73°F</td>
+                            <td>Rainy</td>
+                            <td>72°F</td>
+                            <td>Cloudy</td>
+                        </tr>
+                        <tr>
+                            <td>13:00</td>
+                            <td>74°F</td>
+                            <td>Thunderstorm</td>
+                            <td>72°F</td>
+                            <td>Sunny</td>
+                            
+                        <tr>
+                            <td>14:00</td>
+                            <td>75°F</td>
+                            <td>Thunderstorm with sun</td>
+                            <td>73°F</td>
+                            <td>Sunny</td>
+                        </tr>
+                        <tr>
+                            <td>15:00</td>
+                            <td>76°F</td>
+                            <td>Thunderstorm with sun</td>
+                            <td>Unknown</td>
+                            <td>Cloudy</td>
+                        </tr>
+
+                        <tr>
+                            <td>16:00</td>
+                            <td>75°F</td>
+                            <td>Thunderstorm with sun</td>
+                            <td>72°F</td>
+                            <td>Raining</td>
+                        </tr>
+
+                         <tr>
+                            <td>17:00</td>
+                            <td>70°F</td>
+                            <td>Thunderstorm</td>
+                            <td>Unknown</td>
+                            <td>Unknown</td>
+                        </tr>
+
+                        <tr>
+                            <td>18:00</td>
+                            <td>65°F</td>
+                            <td>Thunderstorm</td>
+                            <td>68°F</td>
+                            <td>Sunny</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>19:00</td>
+                            <td>57°F</td>
+                            <td>Thunderstorm</td>
+                            <td>Unknown</td>
+                            <td>Unknown</td>
+                        </tr>
+
+                        <tr>
+                            <td>20:00</td>
+                            <td>52°F</td>
+                            <td>Thunderstorm</td>
+                            <td>56°F</td>
+                            <td>Raining</td>
+                        </tr>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Adam's Weather Journey | Independence, Iowa</p>
+    </footer>
+
+</body>
+</html>

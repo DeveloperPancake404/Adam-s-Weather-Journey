@@ -5,74 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam's Weather Journey</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            color: #333;
-            background-color: #f4f7f6;
-        }
-        header {
-            background: #2c3e50;
-            color: #fff;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        nav {
-            background: #34495e;
-            padding: 0.5rem;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .weather-card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-            color: #777;
-        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: #333; background-color: #f4f7f6; }
+        header { background: #2c3e50; color: #fff; padding: 2rem 1rem; text-align: center; border-bottom: 4px solid #3498db; }
+        nav { background: #34495e; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
+        nav a:hover { color: #3498db; }
+        .container { max-width: 900px; margin: 20px auto; padding: 0 20px; }
+        .weather-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; text-align: center; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #777; }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Adam's Weather Journey</h1>
         <p>Exploring the world, one forecast at a time.</p>
     </header>
-
     <nav>
         <a href="index.html">Home</a>
+        <a href="journal.html">Journal</a>
         <a href="education.html">Education</a>
         <a href="about.html">About</a>
     </nav>
-
     <div class="container">
-        <section id="content">
-            <h2>Latest Update</h2>
-            <p>Welcome to my weather journey! I am currently tracking the weather conditions of Independence, IA. by documenting daily forecasts versus what happened.</p>
+        <section class="weather-card">
+            <h2>Current Conditions</h2>
+            <p>Independence, IA</p>
+            <div style="font-size: 3rem; font-weight: bold;">68°F</div>
+            <p>Partly Cloudy</p>
+        </section>
+        <section style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h2>Welcome</h2>
+            <p>Welcome to my weather tracking site! Follow my latest observations in the **Journal** or learn about meteorology in the **Education** section.</p>
         </section>
     </div>
-
-    <footer>
-        <p>&copy; 2026 Adam's Weather Journey</p>
-    </footer>
-
+    <footer><p>&copy; 2026 Adam's Weather Journey</p></footer>
 </body>
 </html>
