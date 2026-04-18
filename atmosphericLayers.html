@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmospheric Layers - Adam's Weather Journey</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+
+        /* Navigation & Header */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid #3498db;
+        }
+        nav {
+            background: #34495e;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        nav a:hover { color: #3498db; }
+
+        /* Main Content Layout */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+        }
+
+        @media (max-width: 850px) {
+            .container { grid-template-columns: 1fr; }
+        }
+
+        .education-article {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Educational Features */
+        .diagram-box {
+            background: #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: center;
+            border: 1px dashed #ced4da;
+        }
+        
+        .did-you-know {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* Sidebar Elements */
+        .sidebar-box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+        .sidebar-box h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .glossary-term {
+            font-weight: bold;
+            color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Atmospheric Layers</h1>
+        <p>Scientific insights into atmospheric phenomena</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="journal.html">Journal</a>
+        <a href="education.html">Education</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="container">
+        
+        <main>
+            <a href="education.html" class="back-btn">&larr; Back to Education Archives</a>
+            
+            <article class="education-article">
+                <h1>Understanding Atmospheric Layers</h1>
+
+                <div class="diagram-box">
+                    <img src="atmosphericLayers.jpg" alt="Visual diagram of atmospheric layers" style="max-width: 100%; height: auto; border-radius: 8px;">
+                    <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">Figure 1: Visual representation of the atmospheric process.</p>
+                </div>
+
+                <h2>Here are the atmospheric layers:</h2>
+                <p>Troposphere</p>
+                <ul>
+                    <li><strong>Location:</strong> Ground level up to ~4-12 miles.</li>
+                    <li><strong>Key Fact:</strong> This is where we live and almost all weather occurs.</li>
+                    <li><strong>Temperature:</strong> Gets colder the higher you go. As you climb higher in the troposphere, the temperature drops at a steady rate-roughly 3.6°F per 1,000 feet.</li>
+                    <li>It isn’t a perfect sphere. It is thickest at the equator (about 12 miles high) because the warm air expands, and thinnest at the poles (about 4 miles high) where the cold air is more dense and compressed.</li>
+                    <li>Because the sun heats the Earth’s surface, the air at the bottom of this layer is warmer than the air above it. This causes warm air to rise and cool air to sink, which creates the winds and vertical currents that drive our weather.</li>
+                </ul>
+
+                <div class="did-you-know">
+                    <strong>Did you know?</strong> 
+                    The Troposphere contains about 75% of the atmosphere's mass and almost all of its water vapor, making it the most dynamic layer for weather phenomena.
+                </div>
+
+                <p>Stratosphere</p>
+                <ul>
+                    <li><strong>Location:</strong> Above the troposhphere, up to 31 miles.</li>
+                    <li><strong>Key Fact:</strong> Contains the ozone layer, and commercial jets often fly here because the air is very stable.</li>
+                    <li><strong>Temperature:</strong> It gets warmer as you go higher (because of the ozone layer absorbing UV radiation).</li>
+                </ul>
+
+                <p>Mesosphere</p>
+                <ul>
+                    <li><strong>Location:</strong> 31 miles to 53 miles.</li>
+                    <li><strong>Key Fact:</strong> This is where most meteors burn up upon entry, creating “shooting stars.” The air here is thin, but thick enough to cause friction against incoming rocks.</li>
+                    <li><strong>Temperature:</strong>  Gets colder the higher you go.</li>
+                </ul>
+
+                <p>Thermosphere</p>
+                <ul>
+                    <li><strong>Location:</strong> 53 miles to 375 miles.</li>
+                    <li><strong>Key Fact:</strong> This layer absorbs high-energy X-rays and UV radiation. While temperatures are very high (up to 3,600°F), it would feel freezing to your skin because the air is so thin there aren’t enough gas molecules to transfer heat to you.</li>
+                    <li><strong>Temperature:</strong>  It gets much warmer as you go higher.</li>
+                </ul>
+
+                <p>Exosphere</p>
+                <ul>
+                    <li><strong>Location:</strong> 375 miles to 6200 miles.</li>
+                    <li><strong>Key Fact:</strong> This is the outermost layer of the atmosphere, where air becomes extremely thin and gradually merges with space.</li>
+                </ul>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Adam's Weather Journey</p>
+    </footer>
+
+</body>
+</html>
