@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coriolis Effect - Adam's Weather Journey</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+
+        /* Navigation & Header */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid #3498db;
+        }
+        nav {
+            background: #34495e;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        nav a:hover { color: #3498db; }
+
+        /* Main Content Layout */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+        }
+
+        @media (max-width: 850px) {
+            .container { grid-template-columns: 1fr; }
+        }
+
+        .education-article {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Educational Features */
+        .diagram-box {
+            background: #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: center;
+            border: 1px dashed #ced4da;
+        }
+        
+        .did-you-know {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* Sidebar Elements */
+        .sidebar-box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+        .sidebar-box h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .glossary-term {
+            font-weight: bold;
+            color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Weather Education</h1>
+        <p>Scientific insights into atmospheric phenomena</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="journal.html">Journal</a>
+        <a href="education.html">Education</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="container">
+        
+        <main>
+            <a href="education.html" class="back-btn">&larr; Back to Education Archives</a>
+            
+            <article class="education-article">
+                <h1>Understanding the Coriolis Effect</h1>
+                <p>The Coriolis effect is a phenomenon that explains why moving objects appear to curve as they travel across the Earth's surface. It isn't a "force" in the traditional sense, but rather an effect caused by the Earth's rotation.</p>
+
+                <h2>Different Speeds of Rotation</h2>
+                <p>The Earth is a sphere, and it rotates once every 24 hours. However, different points on the planet have to travel at different distances in that same amount of time.</p>
+                <ul>
+                    <li><strong>At the Equator:</strong> The Earth is at its widest (aroudn 24,801 miles). To complete a full rotation in a day, a point on the equator must travel at roughly 1,000 miles per hour.</li>
+                    <li><strong>At the Poles:</strong> The distance around the Earth is much smaller. A point near the North or South Pole moves much slower, only covering a few miles in those same 24 hours.</li>
+                </ul>
+
+                <h2>The Law of Inertia</h2>
+                <p>When an object (like a mass of air) moves from the quator toward the North Pole, it maintains its original speed of 1000 miles per hour. As it travels north, the ground beneath it is moving slower and slower. Because the air is moving east faster than the ground is, it appears to "outrun" the Earth and curve to the right.</p>
+
+                <h2>Direction of the Curve</h2>
+                <p>The direction of the curve depends on which half of the world you are in:</p>
+                <ul>
+                    <li><strong> Northern Hemisphere:</strong> Objects are deflected to the right.</li>
+                    <li><strong> Southern Hemisphere:</strong> Objects are deflected to the left.</li>
+                </ul>
+
+                <h2>Why It Matters</h2>
+                <p>The Coriolis effect is a major driver of global weather patterns."</p>
+                <ul>
+                    <li><strong>Trade Winds:</strong> Instead of air simply flowing straight from high-pressure areas to low-pressure areas, the Coriolis effect twists the wind, creating the circular patterns we see in global wind belts.</li>
+                    <li><strong>Cyclones and Hurricanes:</strong> This effect is what causes hurricanes to spin. In the Northern Hemisphere, the inward-rushing air is pulled to the right, creating a counter-clockwise spin. In the Southern Hemisphere, it's the opposite.</li>
+                    <li><strong>Ocean Currents:</strong> Large-scale ocean currents, called gyres, follow these same curved paths dictated by the rotation of the planet.</li>
+                </ul>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Adam's Weather Journey</p>
+    </footer>
+
+</body>
+</html>
