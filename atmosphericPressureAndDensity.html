@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Title - Adam's Weather Journey</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+
+        /* Navigation & Header */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid #3498db;
+        }
+        nav {
+            background: #34495e;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        nav a:hover { color: #3498db; }
+
+        /* Main Content Layout */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+        }
+
+        @media (max-width: 850px) {
+            .container { grid-template-columns: 1fr; }
+        }
+
+        .education-article {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Educational Features */
+        .diagram-box {
+            background: #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: center;
+            border: 1px dashed #ced4da;
+        }
+        
+        .did-you-know {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* Sidebar Elements */
+        .sidebar-box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+        .sidebar-box h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .glossary-term {
+            font-weight: bold;
+            color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Atmospheric Pressure and Density</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="journal.html">Journal</a>
+        <a href="education.html">Education</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="container">
+        
+        <main>
+            <a href="education.html" class="back-btn">&larr; Back to Education Archives</a>
+            
+            <article class="education-article">
+                <h1>Understanding Atmospheric Pressure and Density</h1>
+
+                <div class="diagram-box">
+                    <img src="atmosphericPressure.jpg" alt="Diagram illustrating atmospheric pressure" style="max-width: 100%; height: auto; border-radius: 8px;">
+                    <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">Figure 1: Visual representation of the atmospheric process.</p>
+                </div>
+
+                <h2>Air Pressure</h2>
+                <p>Air pressure is the force <strong>exerted</strong> by the weight of the air molecules above you. As you move higher up-like climbing a mountain or flying in a plane-there is less air above you. Because there is less weight pushing down, the air pressure decreases.</p>
+                <h2>Air Density</h2>
+                <p>Air density refers to how “crowded” the air molecules are in a specific space. The air at the bottom of the atmosphere has the weight of all the air above it pressing down, the molecules get squished together. This makes the air very <strong>dense</strong> near the surface. At higher <strong>altitudes</strong>, there is less pressure to squish the molecules together so they spread out. This is why people say the air is “thin” at the top of Mount Everest; there are fewer molecules of oxygen in every breath you take.</p>
+
+                <h2>Why does this matter?</h2>
+                <p>Differences in air pressure are what create wind. Air naturally wants to move from areas of high pressure to areas of low pressure to find a balance. Falling air pressure often signals that a storm system is moving in, while rising pressure usually brings clear, sunny skies.</p>
+            </article>
+        </main>
+
+        <aside>
+            <div class="sidebar-box">
+                <h3>Key Terms</h3>
+                <p><span class="glossary-term">Exerted:</span> Pushed or put forth</p>
+                <p><span class="glossary-term">Altitude:</span> Vertical distance (or height) of an object or point in relation to sea level or the Earth's surface.</p>
+                <p><span class="glossary-term">Dense:</span> Measure how much "stuff" (mass) is packed into a specific amount of space (volume).</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Adam's Weather Journey</p>
+    </footer>
+
+</body>
+</html>
