@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hail Formation - Adam's Weather Journey</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+
+        /* Navigation & Header */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid #3498db;
+        }
+        nav {
+            background: #34495e;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        nav a:hover { color: #3498db; }
+
+        /* Main Content Layout */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+        }
+
+        @media (max-width: 850px) {
+            .container { grid-template-columns: 1fr; }
+        }
+
+        .education-article {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Educational Features */
+        .diagram-box {
+            background: #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: center;
+            border: 1px dashed #ced4da;
+        }
+        
+        .did-you-know {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* Sidebar Elements */
+        .sidebar-box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+        .sidebar-box h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .glossary-term {
+            font-weight: bold;
+            color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Weather Education</h1>
+        <p>Scientific insights into atmospheric phenomena</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="journal.html">Journal</a>
+        <a href="education.html">Education</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="container">
+        
+        <main>
+            <a href="education.html" class="back-btn">&larr; Back to Education Archives</a>
+            
+            <article class="education-article">
+                <h1>Understanding Hail Formation</h1>
+                <p>Hail formation is a fascinating process that requires specific "ingredients" and a very powerful storm structure. Essentially, a hailstone is a piece of ice that is kept suspended in a cloud by rushing air until it grows too heavy to stay up.</p>
+
+                <h2>The Ingredients</h2>
+                <p>For hail to form, a thunderstorm needs three things:</p>
+                <ul>
+                    <li><strong>A powerful updraft:</strong> A strong column of rising air that moves from the bottom of the storm toward the top.</li>
+                    <li><strong>Supercooled water:</strong> Liquid water droplets that are colder than 0 degrees Celsius but haven't frozen yet.</li>
+                    <li><strong>Freezing temperatures:</strong> The top of the storm must be well below freezing.</li>
+                </ul>
+
+                <h2>The Embryo Phase</h2>
+                <p>It starts with a small "embryo," usually a frozen raindrop or a bit of snow (called graupel). As the updraft pushes this embryo higher into the cold parts of the storm, it collides with supercooled water droplets. These droplets freeze instantly onto the embryo on contact.</p>
+                
+                <h2>The Growth Cycle</h2>
+                <p>The hailstone doesn't just fall immediately. The updraft is often strong enough to keep the ice suspended. As the hailstone is tossed around inside the storm, it continues to collect layers of ice. Clear ice forms when the hailstone is in a slightly warmer part of the cloud. The water spreads out before freezing, creating a clear layer. Opaque ice forms when the water freezes so quickly that air bubbles get trapped inside, making the ice look white or cloudy.</p>
+                
+                <h2>Falling to Earth</h2>
+                <p>Eventually, the hailstone grows so large that its weight overcomes the strength of the updraft, or it gets caught in a downdraft (air moving downward). Gravity takes over, and the hail falls to the ground.</p>
+
+                <hr>
+         </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Adam's Weather Journey</p>
+    </footer>
+
+</body>
+</html>
